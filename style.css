@@ -1,0 +1,84 @@
+/* 
+    CSS - Cascading Style Sheets
+    Language that defines style and positioning of HTML Elements
+
+    Ruleset
+
+    Selector {
+        declaration
+        property: value;
+        property: value;
+        key: value;
+    }
+*/
+
+/* Wildcard Selector */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* Element Selector */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ID selector */
+#nav-bar {
+    background-color: #006266;
+}
+
+/* Class selector */
+.nav-link {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-link:hover {
+    color: red;
+}
+
+.nav-link:focus {
+    color: blue
+}
+
+.nav-link:active {
+    color: green
+}
+
+.btn:focus {
+    background-color: red;
+}
+
+/* Compound selector */
+body > section > article img {
+    width: 25em;
+    height: 25em;
+    object-fit: cover;
+}
+
+/*
+    Order of Specificity
+    1. !important
+    2. in-line style
+    3. id selector
+    4. class
+    5. element
+*/
+
+#order-of-specificity {
+    border: 2px solid black;
+    width: 1000px;
+    height: 100px;
+
+    background-color: purple;
+}
+
+div {
+    background-color: red !important;
+}
+
+.order-of-specificity {
+    background-color: blue;
+}
